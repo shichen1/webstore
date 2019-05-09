@@ -1,0 +1,18 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: store-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: ${spring.application.name}:${server.port}
+zuul:
+  prefix: /api # 添加路由前缀
+  retryable: true
+  routes:
+    store-item: /item/** # 将商品微服务映射到/item/**
