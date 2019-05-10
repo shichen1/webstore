@@ -13,6 +13,7 @@
         <module>chen_eureka</module>
         <module>chen_gateway</module>
         <module>chen_item</module>
+        <module>chen_upload</module>
     </modules>
 
     <parent>

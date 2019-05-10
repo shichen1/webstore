@@ -1,15 +1,8 @@
 server:
-  port: 9001
+  port: 9002
 spring:
   application:
-    name: store-item
-  datasource:
-    url: jdbc:mysql://192.168.25.120:3306/store?characterEncoding=UTF8
-    username: root
-    password: root
-  jpa:
-    database: mysql
-    show-sql: true
+    name: store-upload
 eureka:
   client:
     service-url:
@@ -18,3 +11,10 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1
     instance-id: ${spring.application.name}:${server.port}
+aliyun:
+  accessKeyId: LTAIhThFc6PNAQw1
+  accessKeySecret: Xhss9NQEDzY2LZcHfcRXPlJaVYlyco
+  oss:
+    endpoint: oss-cn-hangzhou.aliyuncs.com
+    bucketName: chenshiyan
+    folder: images1/
