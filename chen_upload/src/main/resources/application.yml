@@ -12,8 +12,8 @@ eureka:
     ip-address: 127.0.0.1
     instance-id: ${spring.application.name}:${server.port}
 aliyun:
-  accessKeyId: LTAIhThFc6PNAQw1
-  accessKeySecret: Xhss9NQEDzY2LZcHfcRXPlJaVYlyco
+  accessKeyId: LTAIhThFc6PNA
+  accessKeySecret: Xhss9NQEDzY2LZcHfcRXPlJaVYlyc
   oss:
     endpoint: oss-cn-hangzhou.aliyuncs.com
     bucketName: chenshiyan
